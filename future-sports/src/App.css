@@ -69,28 +69,37 @@ nav {
 
 /* Main Content */
 .main {
-  width: 100%;
   grid-area: main;
   padding: 10px;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-between;
   background-color: aliceblue;
   color: black;
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 1;
+
   transition: margin-top 0.3s ease-in-out;
+}
+
+/* Right hand side content */
+aside {
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  color: black;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
 }
 
 /* Image wrapper */
 .image-wrapper img {
   object-fit: contain; 
   object-position: center;  
-  max-height: 400px;
+
   width: 100%; 
   height: 100%; 
 }
@@ -188,19 +197,7 @@ nav {
   margin-bottom: 10px;
 }
 
-/* Right hand side content */
-aside {
-  grid-area: aside;
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  color: black;
-  height: auto;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  background-color: aliceblue;
-}
+
 
 /* Contact Us */ 
 .contact_us {
@@ -219,14 +216,14 @@ footer {
   order: 5;
 }
 
-.container{
+{
   display: flex;
   flex-direction: row;
 }
 
-.app{
+.container{
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 65% 35%;
   grid-template-areas:
     "header header"
     "nav nav"
@@ -275,8 +272,9 @@ footer {
 }
 
 /* Roster */
-.rosterimg {
+.roster img {
   align-items: center;
+  width: 75%;
  
 }
 

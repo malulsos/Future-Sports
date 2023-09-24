@@ -39,8 +39,9 @@ const ArticleSection = () => {
 
   return (
     <section className="news">
+      <a id="news"></a>
       <h2>News</h2>
-      {articles.map((article, index) => (
+        {articles.map((article, index) => (
         <Article
           key={index}
           title={article.title}

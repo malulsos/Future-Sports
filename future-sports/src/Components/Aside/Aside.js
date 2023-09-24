@@ -1,14 +1,14 @@
 import React from "react";
 import Weather from './Weather';
 import Calendar from './Calendar';
-import Contact from './ContactUs';
+import Roster from "./Roster";
 
 const Aside = () => {
   return (
     <aside>
       <Weather />
       <Calendar />
-      <Contact />
+      <Roster />
     </aside>
   );
 };

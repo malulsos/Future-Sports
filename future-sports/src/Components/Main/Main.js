@@ -1,8 +1,9 @@
 import React from "react";
-import ArticleSection from "./News/ArticleSection";
+import ArticleSection from "./Article/ArticleSection";
 import Photos from "./Photos";
 import Video from "./Video";
-import Team from "./Team";
+
+import Contact from './ContactUs';
 import 'video-react/dist/video-react.css' 
 
 const Main = () => {
@@ -11,7 +12,8 @@ const Main = () => {
         <ArticleSection />
         <Photos />
         <Video />
-        <Team />
+        <Contact />
+
     </div>
     );
 };

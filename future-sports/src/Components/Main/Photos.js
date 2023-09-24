@@ -19,10 +19,11 @@ const Photos = () => {
   ];
 
   return (
-    <div className="photos">
+    <section className="photos">
+      <a id="photos"></a>
       <h2>Photo Section</h2>
       <ImageCarousel images={images} />
-    </div>
+    </section>
   );
 };
 

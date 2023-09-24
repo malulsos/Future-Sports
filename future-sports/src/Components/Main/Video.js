@@ -25,7 +25,8 @@ const Video = () => {
   const handleClick = (video) => setCurrentVideo(video);
 
   return (
-    <div className="video-section">
+    <section className="video-section">
+      <a id="videos"></a>
       <h2>Video Section</h2>
       <div className="video-wrapper">
         <div className="list-wrapper">
@@ -43,7 +44,7 @@ const Video = () => {
           <ReactPlayer url={currentVideo.url} controls={true} playing={true} />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

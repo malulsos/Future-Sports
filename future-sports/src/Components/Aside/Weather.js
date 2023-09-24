@@ -2,7 +2,7 @@ import React from 'react';
 
 const Weather = () => {
   return (
-    <div className="weather">
+    <section className="weather">
       <a id="weather"></a>
       <h2>Weather</h2>
       <iframe
@@ -11,7 +11,7 @@ const Weather = () => {
         height="400"
         title="Weather Map"
       ></iframe>
-    </div>
+    </section>
   );
 };
 

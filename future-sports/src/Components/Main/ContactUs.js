@@ -7,9 +7,8 @@ const ContactUs = () => {
       <h2>Contact Us</h2>
       <iframe 
         src="https://docs.google.com/forms/d/e/1FAIpQLSdGuNZuUUzlG76fe9noS-ACo2-adYtShnO91zQ5OM8yvcVZiQ/viewform?embedded=true" 
-        width="300" 
-        height="650" 
-        frameborder="0">
+        width="auto" 
+        height="400">
     </iframe>
     </div>
   );
