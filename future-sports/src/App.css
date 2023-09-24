@@ -1,0 +1,389 @@
+/* Global styles */
+body {
+  display: center;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: aliceblue; 
+  max-width: 1400px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  color: #434CE6;
+}
+
+/* Header */
+header {
+  background-image: url("../src/images/background2.png");
+  background-position: bottom;
+  background-size: cover;
+  padding: 20px;
+  color: #434CE6;
+  z-index: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header img {
+  border-radius: 50px;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  background-color: #070628;
+  color: white;
+  padding: 9px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-radius: 0 0 4px 4px;
+}
+
+/* buttons */
+.button {
+  padding: 5px 10px;
+  margin-right: 6px;
+  background-color: #434CE6;
+  color: white;
+
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: aliceblue;
+}
+
+/* Search */
+.searchbar {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #434CE6;
+  color: white;
+  text-align: left;
+  margin-right: 10px;
+  margin-left: auto;
+  border-radius: 4px;
+}
+
+/* Main Content */
+.main {
+  width: 100%;
+  grid-area: main;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: aliceblue;
+  color: black;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+  transition: margin-top 0.3s ease-in-out;
+}
+
+/* Image wrapper */
+.image-wrapper img {
+  object-fit: contain; 
+  object-position: center;  
+  max-height: 400px;
+  width: 100%; 
+  height: 100%; 
+}
+
+/* Image carousel */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  height: 400px;
+  width: 800px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 16px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Round the button */
+.next {
+  right: 0;
+  border-radius: 36px 0 0 36px;
+}
+
+/* Round the button */
+.prev {
+  left: 0;
+  border-radius: 0 36px 36px 0;
+}
+
+/* Lightbox Styles */
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.lightbox {
+  position: relative;
+  background-color: aliceblue;
+  max-width: 80%;
+  padding: 20px;
+  border-radius: 4px;
+  
+}
+
+.lightbox-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  color: black;
+}
+
+.lightbox-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lightbox-close {
+  color: black;
+  font-size: 24px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/*Calendar */
+.calander {    
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Right hand side content */
+aside {
+  grid-area: aside;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  height: auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: aliceblue;
+}
+
+/* Contact Us */ 
+.contact_us {
+  position: relative;
+  bottom: 0;
+  margin-top: auto;
+  grid-area: contact_us;
+}
+
+/* Footer */
+footer {
+  grid-area: footer;
+  background-color: #070628;
+  color: white;
+  padding: 20px;
+  order: 5;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+}
+
+.app{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "main aside"
+    "footer footer";
+}
+
+/* Weather, Calendar, Photos, videos, Contact Us, and Roster and article sections */
+.weather, .calendar, .photos, .videos, .contact_us, .roster, .article, .news, .video-wrapper, .video-section{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+}
+
+/* iframe styles */
+.contact_us iframe {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.calendar iframe {
+  border: solid 1px #434CE6;
+}
+
+/* News */
+.full-article {
+  display: none;
+  max-width: 100%; 
+  margin-top: 10px;
+}
+
+.expand-button {
+  background-color: #434CE6;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Roster */
+.rosterimg {
+  align-items: center;
+ 
+}
+
+/* Headings */
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #434CE6;
+  text-shadow: -1px -1px 1px #070628, 1px -1px 1px #070628, -1px 1px 1px #070628, 1px 1px 1px #070628;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  margin: 0px 0px 8px;
+  background-color: #434CE6;
+  border-radius: 5px;
+  text-indent: 10px;
+  color: 070628;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  margin: 0px 0px 8px;
+}  
+
+p {
+  font-size: 12px;
+  text-align: left;
+}
+
+
+/* Hover underline */	
+a:hover {	
+  color: rgb(7, 6, 40);	
+  text-decoration: underline;	
+}
+
+.highlight {
+  background-color: yellow; 
+  font-weight: bold;
+}
+
+.my-button {
+  background-color: #434CE6;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.my-button:hover {
+  background-color: rgb(7, 6, 40);
+}
+
+/* Video Section */
+.video-section {
+  background-color: white;
+  padding: 20px;
+}
+
+.video-wrapper {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.list-wrapper,
+.video-player {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; 
+  color: white;
+}
+
+.list-wrapper {
+  flex: 1;
+  padding: 10px;
+  border-right: 1px solid gray;
+}
+
+.video-items {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; 
+}
+
+.video-item {
+  background-color: darkgrey;
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.video-item button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.video-player {
+  flex: 2;
+  padding: 10px;
+}
