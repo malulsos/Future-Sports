@@ -5,7 +5,6 @@ import Header from "./Components/Header/Header";
 import Main from "./Components/Main/Main";
 import Aside from "./Components/Aside/Aside";
 import Footer from "./Components/Footer/Footer";
-import Search from "./Components/Navigation/Search";
 
 function App() {
   return (
