@@ -1,7 +1,11 @@
+// Import necessary libraries
 import React from 'react';
 
+// Define the Calendar component
 const Calendar = () => {
+  // Render the Calendar component
   return (
+    // Render JSX for Calendar and embed the calendar
     <section className="calendar">
         <a id="calendar"></a>
         <h2>Calendar</h2>
@@ -15,4 +19,5 @@ const Calendar = () => {
   );
 };
 
+// Export the Calendar component
 export default Calendar;

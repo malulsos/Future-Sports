@@ -1,7 +1,11 @@
+// Import necessary libraries
 import React from 'react';
 
+// Define the Weather component
 const Weather = () => {
+  // Render the Weather component
   return (
+    // Render JSX for Weather and embed the weather map
     <section className="weather">
       <a id="weather"></a>
       <h2>Weather</h2>
@@ -15,4 +19,5 @@ const Weather = () => {
   );
 };
 
+// Export the Weather component
 export default Weather;

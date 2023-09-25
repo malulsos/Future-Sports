@@ -1,7 +1,11 @@
+// Import necessary libraries
 import React from 'react';
 
+// Define the ContactUs component
 const ContactUs = () => {
+  // Render the ContactUs component
   return (
+    // Render JSX for ContactUs
     <div className="contact_us">
         <a id="contact_us"></a>
       <h2>Contact Us</h2>
@@ -14,4 +18,5 @@ const ContactUs = () => {
   );
 };
 
+// Export the ContactUs component
 export default ContactUs;

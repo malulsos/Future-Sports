@@ -1,7 +1,11 @@
+// Import necessary libraries
 import React from "react";
 import Article from "./Article"; 
 
+// Define the ArticleSection component
 const ArticleSection = () => {
+
+  // Array containing data for articles
     const articles = [
       {
           title: "First Article",
@@ -36,10 +40,13 @@ const ArticleSection = () => {
       
   ];
 
+  // Render the ArticleSection component
   return (
+    // Render JSX for News
     <section className="news">
       <a id="news"></a>
       <h2>News</h2>
+      {/* Loop through the articles array and render each Article component */}
         {articles.map((article, index) => (
         <Article
           key={index}
@@ -52,4 +59,5 @@ const ArticleSection = () => {
   );
 };
 
+// Export the ArticleSection component
 export default ArticleSection;

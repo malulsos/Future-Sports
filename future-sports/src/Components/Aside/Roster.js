@@ -1,6 +1,8 @@
+// Import necessary libraries
 import React, { useState } from 'react';
 import { LightboxContent } from '../Lightbox'; 
 
+// Define the Roster component
 const Roster = () => {
     const [lightboxVisible, setLightboxVisible] = useState(false);
 
@@ -14,7 +16,9 @@ const Roster = () => {
 
     const lightboxContent = <img src={require('../../images/team.jpg')} alt="Team" />;
 
+    // Render the Roster component
     return (
+        // Render JSX for Roster
         <section className="roster">
             <a id="roster"></a>
             <h2>Roster</h2>
@@ -23,6 +27,7 @@ const Roster = () => {
                 alt="Team"
                 onClick={handleImageClick}
             />
+
             {lightboxVisible && (
                 <LightboxContent content={lightboxContent} onClose={handleLightboxClose} />
             )}
@@ -30,4 +35,5 @@ const Roster = () => {
     );
 };
 
+// Export the Roster component
 export default Roster;

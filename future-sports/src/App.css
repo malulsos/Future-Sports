@@ -121,7 +121,7 @@ aside {
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  position: relative;
+  position: absolute;
   z-index: 1;
   top: 50%;
   transform: translateY(-50%);
