@@ -12,7 +12,6 @@ function App() {
     <div className="App">
       <Header />
       <Navigation />
-      <Search />
       <div className="container">
         <Main />
         <Aside />

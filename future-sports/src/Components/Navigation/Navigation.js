@@ -1,10 +1,11 @@
 import React from "react";
+import Search from '..//Navigation/Search'; 
 
 const Navigation = () => {
   const navItems = ["Home", "News", "Photos", "Videos", "Calendar", "Weather", "Roster", "Contact Us"];
 
   const navButtons = navItems.map((nav, index) => (
-    <a href={`#${nav.toLowerCase().replace(" ", "_")}`} key={index} className="button">
+    <a href={nav === 'Home' ? '#' : `#${nav.toLowerCase().replace(" ", "_")}`} key={index} className="button">
       {nav}
     </a>
   ));
@@ -12,17 +13,9 @@ const Navigation = () => {
   return (
     <nav className="nav">
       {navButtons}
-      <div className="searchbar">
-        <form method="get">
-          <label htmlFor="searchInput">Search:</label>
-          <input type="text" id="searchInput" placeholder="Enter your search" />
-          <button id="searchButton">Search</button>
-        </form>
-      </div>
+      <Search items={navItems} /> {/* Use the Search component */}
     </nav>
   );
 };
-
-
 
 export default Navigation;

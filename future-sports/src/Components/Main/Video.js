@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ReactPlayer from 'react-player';
+import MyButton from '../button.js';
 
 const Video = () => {
   const videos = [
@@ -34,7 +35,7 @@ const Video = () => {
           <div className="video-items">
             {videos.map((video) => (
               <div key={video.id} className="video-item">
-                <button onClick={() => handleClick(video)}>{video.title}</button>
+                <MyButton label={video.title} onClick={() => handleClick(video)} />
               </div>
             ))}
           </div>

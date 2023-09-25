@@ -22,7 +22,9 @@ const Photos = () => {
     <section className="photos">
       <a id="photos"></a>
       <h2>Photo Section</h2>
+      <div className="image-wrapper">
       <ImageCarousel images={images} />
+      </div>
     </section>
   );
 };

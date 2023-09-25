@@ -99,10 +99,12 @@ aside {
 .image-wrapper img {
   object-fit: contain; 
   object-position: center;  
-
+  max-width: 1000px;  
+  max-height: 1000px;  
   width: 100%; 
   height: 100%; 
 }
+
 
 /* Image carousel */
 .slideshow-container {
@@ -119,13 +121,13 @@ aside {
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  position: absolute;
+  position: relative;
   z-index: 1;
   top: 50%;
   transform: translateY(-50%);
   padding: 16px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #434CE6;
 }
 
 /* Round the button */
@@ -138,6 +140,11 @@ aside {
 .prev {
   left: 0;
   border-radius: 0 36px 36px 0;
+}
+
+/*add button hover effect*/
+.prev:hover, .next:hover {
+  background-color: #070628;
 }
 
 /* Lightbox Styles */
@@ -158,10 +165,11 @@ aside {
 .lightbox {
   position: relative;
   background-color: aliceblue;
-  max-width: 80%;
+  max-width: 60%;
+  max-height: 80%;
   padding: 20px;
   border-radius: 4px;
-  
+  overflow-y: auto;
 }
 
 .lightbox-content {
@@ -197,8 +205,6 @@ aside {
   margin-bottom: 10px;
 }
 
-
-
 /* Contact Us */ 
 .contact_us {
   position: relative;
@@ -214,11 +220,8 @@ footer {
   color: white;
   padding: 20px;
   order: 5;
-}
-
-{
-  display: flex;
-  flex-direction: row;
+  border-radius: 4px;
+  text-align: center;
 }
 
 .container{
@@ -255,12 +258,6 @@ footer {
   border: solid 1px #434CE6;
 }
 
-/* News */
-.full-article {
-  display: none;
-  max-width: 100%; 
-  margin-top: 10px;
-}
 
 .expand-button {
   background-color: #434CE6;
@@ -274,7 +271,7 @@ footer {
 /* Roster */
 .roster img {
   align-items: center;
-  width: 75%;
+  width: auto;
  
 }
 
@@ -305,9 +302,16 @@ h3 {
 }  
 
 p {
-  font-size: 12px;
+  line-height: 1.5;
+  font-size: 16px;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  font-family: "Georgia", serif;
   text-align: left;
+  color: #333;
+  word-wrap: break-word;
 }
+
 
 
 /* Hover underline */	
@@ -341,7 +345,7 @@ a:hover {
 }
 
 .video-wrapper {
-  background-color: black;
+
   display: flex;
   flex-direction: row;
 }
@@ -352,7 +356,10 @@ a:hover {
   flex-direction: column;
   align-items: stretch; 
   color: white;
+  background-color: #070628;
+  border-radius: 5px;
 }
+
 
 .list-wrapper {
   flex: 1;
@@ -364,6 +371,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   flex-grow: 1; 
+  
 }
 
 .video-item {
@@ -384,4 +392,5 @@ a:hover {
 .video-player {
   flex: 2;
   padding: 10px;
+  
 }

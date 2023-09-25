@@ -21,7 +21,15 @@ const ImageCarousel = ({ images }) => {
     setLightboxActive(false);
   };
 
-  return (
+ // Auto-rotation of images
+  //const autoRotate = () => {
+    //setCurrentIdx((prevIdx) => (prevIdx === images.length - 1 ? 0 : prevIdx + 1));
+  //};
+
+  // Set interval for auto-rotation
+  //setInterval(autoRotate, 5000);
+
+return (
     <div>
       <div className="slideshow-container">
         <img 

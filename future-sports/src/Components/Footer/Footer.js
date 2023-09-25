@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="Footer">
+    <div className="footer">
         <small>&copy; 2023 Future Sports FC</small>
     </div>
   );
