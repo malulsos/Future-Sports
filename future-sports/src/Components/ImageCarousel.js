@@ -38,8 +38,8 @@ const ImageCarousel = ({ images }) => {
           className="image-wrapper" 
           onClick={openLightbox} // Open lightbox on click
         />
-        <button className="prev" onClick={handlePrev}>Prev</button> // Previous button
-        <button className="next" onClick={handleNext}>Next</button> // Next button
+        <button className="prev" onClick={handlePrev}>Prev</button> {/* Previous button*/}
+        <button className="next" onClick={handleNext}>Next</button> {/* Next button*/}
       </div>
       {lightboxActive && (
         // Render LightboxContent component if lightboxActive is true
